@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ExpenseItem from "./ExpenseItem";
-import Card from "./Card";
+import Card from "../UI/Card";
 import './Expenses.css';
 
 // by using a custom card component we remove duplicate css code from other files and also we now have a dynamic wrapper for other components
