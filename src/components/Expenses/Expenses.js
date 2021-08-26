@@ -6,7 +6,7 @@ import './Expenses.css';
 
 // by using a custom card component we remove duplicate css code from other files and also we now have a dynamic wrapper for other components
 
-function Expenses(props) {
+const  Expenses = (props) => {
     return <Card className="expenses">
         <ExpenseItem
             title={props.items[0].title}

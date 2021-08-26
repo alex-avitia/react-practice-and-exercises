@@ -5,7 +5,7 @@ import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
 import './ExpenseItem.css';
 
-function ExpenseItem (props) {
+const ExpenseItem = (props) => {
 
     //you cannot use custom components as wrappers around other parts of content i.e. Card
 
