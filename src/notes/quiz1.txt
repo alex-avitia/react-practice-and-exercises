@@ -1,0 +1,47 @@
+/* Notes from the first Udemy React quiz (9/10 score) */
+
+
+
+
+1) What kind of code do you write with React.js?
+
+    Declarative Javascript Code
+
+2) What is "JSX"?
+
+    A special, non-standard syntax which is enabled in React projects.
+
+3) Why is React all about "components"?
+
+    Every UI in the end is made up of multiple building blocks (= components),
+    hence it makes sense to think about user interfaces as "combinations of components".
+
+4) What does "declarative" mean?
+
+    You define the desired outcome (e.g. a target UI) and let the library (React) figure out the steps.
+
+5) What is a "React Component"?
+
+    It's a Javascript function which typically returns HTML (JSX) code that should be displayed.
+
+6) How many custom React components must a React app have?
+
+    There's no minimum or maximum.
+
+7) What does a "component tree" mean?
+
+    It means that you have a root node which then has more components nested beneath it.
+
+8) How do you pass data between components?
+
+    Via "custom HTML attributes" (AKA "props").
+
+9) How can you output dynamic data in React components (i.e. in the returned JSX code)?
+
+    You can use single curly braces (opening & closing) with any JS expression between them.
+
+10) [RESOLVED] Which statement is correct?
+
+    [INITIAL] With React, you build multiple sibling component trees that are then mounted into the same DOM node.
+
+    [CORRECT] With React, you build a component tree with one root component that's mounted into a DOM node.
