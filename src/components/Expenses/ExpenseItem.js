@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 import ExpenseDate from './ExpenseDate';
@@ -6,6 +6,15 @@ import Card from '../UI/Card';
 import './ExpenseItem.css';
 
 const ExpenseItem = (props) => {
+    //hooks like this must be called inside React component functions
+    useState();
+
+    let title = props.title;
+
+    const clickHandler = () => {
+        title = 'Updated.';
+        console.log(title);
+    };
 
     //you cannot use custom components as wrappers around other parts of content i.e. Card
 
@@ -13,10 +22,10 @@ const ExpenseItem = (props) => {
         <Card className="expense-item">
         <ExpenseDate date={props.date} />
             <div className="expense-item__description">
-                <h2>{props.title}</h2>
+                <h2>{title}</h2>
                 <div className="expense-item__price">${props.amount}</div>
             </div>
-            <button onClick={() => {console.log("Clicked")}}>Change Title</button>
+            <button onClick={clickHandler}>Change Title</button>
         </Card>
     );
 }
