@@ -10,10 +10,8 @@ const ExpenseItem = (props) => {
     // useState returns an array, where the first value is the parameter and the second is the update
     const [title, setTitle] = useState(props.title);
 
-    let title = props.title;
-
     const clickHandler = () => {
-        title = 'Updated.';
+        setTitle('Updated.');
         console.log(title);
     };
 
