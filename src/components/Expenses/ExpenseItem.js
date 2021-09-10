@@ -9,6 +9,7 @@ const ExpenseItem = (props) => {
     // hooks like this must be called inside React component functions
     // useState returns an array, where the first value is the parameter and the second is the update
     const [title, setTitle] = useState(props.title);
+    console.log('ExpenseItem evaluated by React');
 
     const clickHandler = () => {
         setTitle('Updated.');
