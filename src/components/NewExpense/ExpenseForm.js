@@ -16,24 +16,35 @@ const ExpenseForm = () => {
     // target specifically the value of the information in the title will be logged in the console
     const titleChangeHandler = (event) => {
         // setEnteredTitle(event.target.value)
-        setUserInput({
-            // "...userInput" pulls out all key value pairs and adds them to the new object
-            ...userInput,
-            enteredTitle: event.target.value,
+        // setUserInput({
+        //     // "...userInput" pulls out all key value pairs and adds them to the new object
+        //     ...userInput,
+        //     enteredTitle: event.target.value,
+        // });
+
+        // this guarantees that prevState will always be the latest state snapshot to update
+        setUserInput((prevState) => {
+            return {...prevState, enteredTitle: event.target.value};
         });
     };
     const amountChangeHandler = (event) => {
         // setEnteredAmount(event.target.value);
-        setUserInput({
-            ...userInput,
-            enteredAmount: event.target.value,
+        // setUserInput({
+        //     ...userInput,
+        //     enteredAmount: event.target.value,
+        // });
+        setUserInput((prevState) => {
+            return {...prevState, enteredAmount: event.target.value};
         });
     };
     const dateChangeHandler = (event) => {
         // setEnteredDate(event.target.value);
-        setUserInput({
-            ...userInput,
-            enteredDate: event.target.value,
+        // setUserInput({
+        //     ...userInput,
+        //     enteredDate: event.target.value,
+        // });
+        setUserInput((prevState) => {
+            return {...prevState, enteredDate: event.target.value};
         });
     };
 
