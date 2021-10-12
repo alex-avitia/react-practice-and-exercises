@@ -20,22 +20,21 @@ const ExpenseForm = () => {
             // "...userInput" pulls out all key value pairs and adds them to the new object
             ...userInput,
             enteredTitle: event.target.value,
-        })
+        });
     };
     const amountChangeHandler = (event) => {
         // setEnteredAmount(event.target.value);
         setUserInput({
             ...userInput,
             enteredAmount: event.target.value,
-        })
-
+        });
     };
     const dateChangeHandler = (event) => {
         // setEnteredDate(event.target.value);
         setUserInput({
             ...userInput,
             enteredDate: event.target.value,
-        })
+        });
     };
 
     return <form>
